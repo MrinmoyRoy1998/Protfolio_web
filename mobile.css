@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 2.8rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.dec-dot{
+    border: dotted 5px white;
+    border-bottom:none;
+    margin: 10px auto;
+    width: 150px;
+    margin-bottom: 40px;
+}
+p{
+    font-size: 1.2rem;
+}
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+  /* for mobilr*/
+[class*="col-"] {
+    width: 100%;
+  }
+.navbar{
+    background-color: #24315E;
+    text-align: center;
+  }
+  .nav-head h1{
+      color:white
+  }
+  .nav-menu{
+      display:flex;
+      flex-direction: column;
+  }
+  .nav-menu a{
+    background-color: indianred;
+    margin: 10px 3px;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bolder;
+  }
+  .nav-menu a:hover{
+      background-color: gray;
+  }
+.navbar::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+    /* profile design///home */
+
+#container{
+    background-image: url("picture/back.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 60px;
+    background-size: cover;
+}
+.slider h2{
+    font-size:2.4rem;
+    text-align:center;
+    text-transform: uppercase;
+    color: indigo;
+    font-family: 'Lobster', cursive;
+    padding: 50px;
+}
+.slider p{
+    padding: 60px;
+    color:#d6a916;
+    text-align: justify;
+    font-weight: bolder;
+    font-family: 'Teko', sans-serif;
+}
+#container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* about me start */
+.about-me{
+background-color:#3A3E64;
+padding: 2% 7%;
+text-align: center;
+color: white;
+}
+.about-me h3{
+    text-align: center;
+    font-size:1.5rem;
+    padding:5px;
+}
+.about-image img{
+    height:300px;
+    width: 300px;
+    border: solid 3px red;
+    border-radius: 200px;
+    margin: 10px auto;
+}
+
+.about-descrip p{
+    color:tomato;
+    padding: 15px;
+}
+.about-descrip a{
+    color:tomato;
+    text-transform: lowercase;
+}
+.about-descrip a:hover{
+    background-color: gray;
+    color: indigo;
+}
+.cv-btn{
+    text-transform: uppercase;
+    color: white;
+}
+.about-me::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* skill section start */
+
+.profetional-skill .card{
+    background-color: gray;
+    padding: 15px;
+    height: 800px;
+    border-radius: 5px;
+    transition: 0.4s;
+}
+.card:hover{
+    box-shadow: 0px 4px 7px 5px;
+}
+.card-icon{
+    text-align: center;
+}
+
+.card-icon img{
+    width: 100px;
+    border: 5px solid white;
+    border-radius: 50%;
+    padding: 20px;
+    margin-top: 20px;
+}
+.card-title h3{
+    background-color: #444343;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+.card-des p{
+    text-align: left;
+    padding: 10px;
+    text-transform: uppercase;  
+}
+
+.skill-container{
+    padding: 10px;
+}
+.skill-container h5{
+    font-size: 1.3rem;
+    padding: 5px;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: bolder;
+}
+.skill-container h4{
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+}
+.skill-container h5::before{
+    content: '';
+    background-color: rgba(113, 64, 126, 0.4);
+    position: absolute;
+    top: 38px;
+    left: 0px;
+    width: 100%;
+    height: 20px;
+}
+
+.skill-container h5::after{
+    content: '';
+    background-color: rgba(46, 34, 25, 0.527);
+    position: absolute;
+    top: 38px;
+    left: 0px;
+    width: 0%;
+    height: 20px;
+    animation-duration: 4s;
+    animation-timing-function:linear;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+.skill-container h5.C::after{
+    animation-name: c;
+}
+@keyframes c{
+    to{
+        width: 90%;
+    }
+}
+.skill-container h5.Ci::after{ animation-name: Ci;}
+@keyframes Ci{to{ width: 70%;}}
+.skill-container h5.html::after{ animation-name: html;}
+@keyframes html{to{ width: 95%;}}
+.skill-container h5.Css::after{ animation-name: Css;}
+@keyframes Css{to{ width: 85%;}}
+.skill-container h5.javascript::after{ animation-name: javascript;}
+@keyframes javascript{to{ width: 20%;}}
+.skill-container h5.php::after{ animation-name: php;}
+@keyframes php{to{ width: 20%;}}
+.skill-container h5.node::after{ animation-name: node;}
+@keyframes node{to{ width: 20%;}}
+
+.profetional-skill::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+    /* contact me started */
+
+.contact-me{
+    background-color: #3A3E64;
+    width: 100%;
+    text-align: center;
+    padding:20px;
+}
+.from-contact h3{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 40px;
+}
+.from-contact input,textarea{
+    width: 100%;
+    font-size: 1.3rem;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+    margin: 10px;
+}
+.from-contact button{
+    width: 100px;
+    font-size: 1.3rem;
+    background-color: indigo;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 20px 10px 0px 0px;
+   
+}
+.from-contact button:hover{
+    background-color: gray;
+}
+
+.social-contact h3{
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: bolder;
+        margin-top: 40px;
+}
+.btnn{
+    font-size: 2rem;
+    padding:10px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+}
+.btnn:hover{
+    background-color: gray;
+}
+
+.contact-me::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+     /* footer */
+ .hrr{
+         text-align: center;
+         margin-top: 10px;
+     }
+.f-1 h3{
+   font-size:1.5rem;
+   margin-bottom: 10px;
+   text-transform: uppercase;
+}
+.f-1 p{
+    font-size:1rem;
+}
+.f-3 h3{
+    font-size:1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.f-3 p{
+    font-size:1rem;
+}
+.f-2 h3{
+    font-size:1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.f-2 p{
+    font-size:1rem;
+}
+.contain-1{
+    background-color: black;
+    width: 100%;
+    height:auto;
+    color: white;
+}
+
+.contain-1::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.foot{
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 350px;
+}
+.hr{
+    display: none;
+}
+.foot::after{
+    content: "";
+    display: table;
+    clear: both;
+}
